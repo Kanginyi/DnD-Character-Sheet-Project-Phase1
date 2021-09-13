@@ -10,6 +10,11 @@
 </head>
 <body>
     <h1><u>D&D Character Sheet Generator</u></h1>
+
+    <div id ="character-bar">
+        <!--Show character names here/placeholder images-->
+    </div>
+    <hr>
     <div>
         <form id="character-form">
             <label>Name:</label>
@@ -20,14 +25,10 @@
             <input type="text" id="race-input"><br>
             <label>Class:</label>
             <input type="text" id="class-input"><br>
-            <!--We don't know waht the fuck to do with the stats portion-->
+            <!--We don't know what the fuck to do with the stats portion-->
             <!--This is a button to submit all the information-->
             <input type="submit" value="Create Character!">
         </form>
-    </div>
-
-    <div id ="character-bar">
-        <!--Show character names here/placeholder images-->
     </div>
 
     <div id="character-container">
@@ -36,17 +37,18 @@
             <img id="character-image" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673-960x960.png" alt="Placeholder Image" title="Character Name" width="300px">
             <h4 id="character-race">Character's Race</h4>
             <h4 id="character-class">Character's Class</h4>
+            <button id="delete-button">Delete Character</button>
         </div>
     </div>
-
+    <hr>
     <div>
         <div id="character-stats">
-            <p>Charisma:<button class="dice">Roll for stats</button><br></p>
-            <p>Constitution:<button class="dice">Roll for stats</button><br></p>
-            <p>Dexterity:<button class="dice">Roll for stats</button><br></p>
-            <p>Intelligence:<button class="dice">Roll for stats</button><br></p>
-            <p>Strength:<button class="dice">Roll for stats</button><br></p>
-            <p>Wisdom:<button class="dice">Roll for stats</button></p>
+            <p class="stat-roll">Charisma:<button class="dice">Roll for stats</button><br></p>
+            <p class="stat-roll">Constitution:<button class="dice">Roll for stats</button><br></p>
+            <p class="stat-roll">Dexterity:<button class="dice">Roll for stats</button><br></p>
+            <p class="stat-roll">Intelligence:<button class="dice">Roll for stats</button><br></p>
+            <p class="stat-roll">Strength:<button class="dice">Roll for stats</button><br></p>
+            <p class="stat-roll">Wisdom:<button class="dice">Roll for stats</button></p>
         </div>
     </div>
 </body>
