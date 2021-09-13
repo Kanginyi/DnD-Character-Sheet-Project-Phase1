@@ -25,7 +25,21 @@ function renderCharacter(character) {
 }
 
 function characterBarClickEvent(character) {
-    
+    // const detailedInfo = document.querySelector("#detailed-info");
+
+    const characterName = document.querySelector("#character-name");
+    characterName.textContent = `Character Name: ${character.name}`;
+
+    const characterImage = document.querySelector("#character-image");
+    characterImage.src = character.image;
+    characterImage.alt = character.name;
+    characterImage.title = character.name;
+
+    const characterRace = document.querySelector("#character-race");
+    characterRace.textContent = `Character Race: ${character.race}`;
+
+    const characterClass = document.querySelector("#character-class");
+    characterClass.textContent = `Character Class: ${character.class}`;
 }
 
 //Work on the functionality of this for your stat rolls button
