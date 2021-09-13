@@ -1,0 +1,19 @@
+{
+   "Characters": [
+        {
+            "id": 1,
+            "name": "Aldon",
+            "image": "https://i.pinimg.com/originals/4a/3d/0f/4a3d0f6ac583a71d2169957b77365777.jpg",
+            "race": "Wood Elf",
+            "class": "Barbarian",
+            "stats": {
+                "charisma": 11,
+                "constitution": 16,
+                "dexterity": 14,
+                "intelligence": 9,
+                "strength": 16,
+                "wisdom": 9
+            }
+        }
+    ]
+}
