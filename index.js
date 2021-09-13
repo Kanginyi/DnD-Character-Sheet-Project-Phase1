@@ -42,6 +42,22 @@ function characterBarClickEvent(character) {
     characterClass.textContent = `Character Class: ${character.class}`;
 }
 
+const characterForm = document.querySelector('#character-form')
+
+characterForm.addEventListener('submit', submitCharacter)
+
+function submitCharacter(event){
+    event.preventDefault()
+    const newCharacter = {
+        name: event.target['name-input'].value,
+        image: event.target['img-input'].value,
+        race: event.target['race-input'].value,
+        class: event.target['class-input'].value
+    }
+    renderCharacter(newCharacter)
+    event.target.reset()
+}
+
 //Work on the functionality of this for your stat rolls button
 // const statButton = document.querySelector(".dice");
 // statButton.addEventListener("click", e => {
