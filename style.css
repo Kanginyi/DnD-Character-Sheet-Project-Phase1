@@ -5,6 +5,9 @@ body {
     text-align: center;
     line-height: 25px;
     color: black;
+    background-image: url('https://www.otherworldlyincantations.com/wp-content/uploads/Otherworldly-Incantations-Landform-Worldbuilding.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
@@ -20,4 +23,14 @@ h1 {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35), 0 3px 3px rgba(0, 0, 0, .2);
     text-align: center;
     width: 350px;
+    background: white;
+}
+
+#character-stats {
+    border: solid;
+    border-color: forestgreen;
+    background: white;
+    width: 250px;
+    text-align: center;
+    margin: auto;
 }
