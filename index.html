@@ -25,12 +25,12 @@
     <hr>
     <div>
         <form id="character-form">
-            <label>Name:</label>
+            <label><strong>Name:</strong></label>
             <input type="text" id="name-input" placeholder="Character's Name" required><br>
-            <label>Image:</label>
+            <label><strong>Image:</strong></label>
             <input type="text" id="img-input" placeholder="Add a link!" required><br>
-            <label>Race:</label>
-            <select id="race-input" placeholder="Choose a race">
+            <label><strong>Race:</strong></label>
+            <select id="race-input">
                 <option value="Dragonborn">Dragonborn</option>            
                 <option value="Dwarf">Dwarf</option>
                 <option value="Elf">Elf</option>
@@ -41,8 +41,8 @@
                 <option value="Half-Orc">Half-Orc</option>
                 <option value="Tiefling">Tiefling</option>
             </select>
-            <label>Class:</label>
-            <select id="class-input" placeholder="Choose a class">
+            <label><strong>Class:</strong></label>
+            <select id="class-input">
                 <option value="Barbarian">Barbarian</option>
                 <option value="Bard">Bard</option>
                 <option value="Cleric">Cleric</option>
@@ -67,7 +67,7 @@
             </div>
             <br>
             <!--This is a button to submit all the information-->
-            <input type="submit" value="Create Character!">
+            <input id="submit-button" type="submit" value="Create Character!">
         </form>
     </div>
     <hr>
@@ -85,18 +85,5 @@
             <p class="display-stats" id="wis-stat">WIS:</p>
         </div>
     </div>
-    <hr>
-
-<!-- 
-    <div>
-        <div id="character-stats">
-            <p id="char-roll">Charisma:<button id="char-dice">Roll for stats</button><br></p>
-            <p id="const-roll">Constitution:<button id="const-dice">Roll for stats</button><br></p>
-            <p id="dex-roll">Dexterity:<button id="dex-dice">Roll for stats</button><br></p>
-            <p id="int-roll">Intelligence:<button id="int-dice">Roll for stats</button><br></p>
-            <p id="str-roll">Strength:<button id="str-dice">Roll for stats</button><br></p>
-            <p id="wis-roll">Wisdom:<button id="wis-dice">Roll for stats</button></p>
-        </div>
-    </div> -->
 </body>
 </html>
