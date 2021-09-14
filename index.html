@@ -56,7 +56,16 @@
                 <option value="Warlock">Warlock</option>
                 <option value="Wizard">Wizard</option>
             </select>
-            <!--We don't know what the fuck to do with the stats portion-->
+            <div id="character-stats">
+                <!-- <button id="dice">Roll For Stats</button> -->
+                <p class="stat-roll" id="char-roll">Charisma:</p>
+                <p class="stat-roll" id="con-roll">Constitution:</p>
+                <p class="stat-roll" id="dex-roll">Dexterity:</p>
+                <p class="stat-roll" id="int-roll">Intelligence:</p>
+                <p class="stat-roll" id="str-roll">Strength:</p>
+                <p class="stat-roll" id="wis-roll">Wisdom:</p>
+            </div>
+
             <!--This is a button to submit all the information-->
             <input type="submit" value="Create Character!">
         </form>
@@ -68,29 +77,18 @@
             <img id="character-image" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673-960x960.png" alt="Placeholder Image" title="Character Name" width="300px">
             <h4 id="character-race">Character's Race</h4>
             <h4 id="character-class">Character's Class</h4>
-            <button id="delete-button">Delete Character</button>
             <p class="display-stats" id="char-stat">CHA:</p>
             <p class="display-stats" id="con-stat">CON:</p>
             <p class="display-stats" id="dex-stat">DEX:</p>
             <p class="display-stats" id="int-stat">INT:</p>
             <p class="display-stats" id="str-stat">STR:</p>
             <p class="display-stats" id="wis-stat">WIS:</p>
+            <button id="delete-button">Delete Character</button>
         </div>
     </div>
     <hr>
-    <!-- This is for the first rollStats function -->
-    <!-- <div>
-        <div id="character-stats">
-            <button id="dice">Roll For Stats</button>
-            <p class="stat-roll">Charisma:</p>
-            <p class="stat-roll">Constitution:</p>
-            <p class="stat-roll">Dexterity:</p>
-            <p class="stat-roll">Intelligence:</p>
-            <p class="stat-roll">Strength:</p>
-            <p class="stat-roll">Wisdom:</p>
-        </div>
-    </div> -->
 
+<!-- 
     <div>
         <div id="character-stats">
             <p id="char-roll">Charisma:<button id="char-dice">Roll for stats</button><br></p>
@@ -100,6 +98,6 @@
             <p id="str-roll">Strength:<button id="str-dice">Roll for stats</button><br></p>
             <p id="wis-roll">Wisdom:<button id="wis-dice">Roll for stats</button></p>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
