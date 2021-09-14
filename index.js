@@ -10,6 +10,9 @@ receiveInformation();
 function renderCharacter(character) {
     const characterBar = document.querySelector("#character-bar");
     
+    const newDiv = document.createElement("div")
+    newDiv.id = `new-div-${character.name}`
+
     const barName = document.createElement("p");
     barName.textContent = character.name;
 
@@ -19,9 +22,49 @@ function renderCharacter(character) {
     barImage.title = character.name;
     barImage.width = 100;
 
-    characterBar.append(barName, barImage);
+    characterBar.appendChild(newDiv)
+    newDiv.append(barName, barImage);
     
     barImage.addEventListener("click", e => characterBarClickEvent(character));
+
+    const deleteButton = document.createElement('button')
+    deleteButton.textContent = "Delete"
+    newDiv.appendChild(deleteButton)
+    
+    deleteButton.addEventListener('click', e => {
+    const newDiv = document.querySelector(`#new-div-${character.name}`)
+    newDiv.remove()
+    
+    const resetName = document.querySelector('#character-name')
+    resetName.textContent = 'Character\'s Name'
+    
+    const resetImg = document.querySelector('#character-image')
+    resetImg.src = 'https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673-960x960.png'
+    
+    const resetRace = document.querySelector('#character-race')
+    resetRace.textContent = 'Character\'s Race'
+    
+    const resetClass = document.querySelector('#character-class')
+    resetClass.textContent = 'Character\'s Class'
+    
+    const resetCha = document.querySelector('#char-stat')
+    resetCha.textContent = 'CHA:'
+
+    const resetCon = document.querySelector('#con-stat')
+    resetCon.textContent = 'CON:'
+
+    const resetDex = document.querySelector('#dex-stat')
+    resetDex.textContent = 'DEX:'
+
+    const resetInt = document.querySelector('#int-stat')
+    resetInt.textContent = 'INT:'
+
+    const resetStr = document.querySelector('#str-stat')
+    resetStr.textContent = 'STR:'
+
+    const resetWis = document.querySelector('#wis-stat')
+    resetWis.textContent = 'WIS:'
+})
 }
 
 function characterBarClickEvent(character) {
@@ -84,10 +127,22 @@ function submitCharacter(event){
         }
     }
 
+    fetch(BASE_URL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newCharacter)
+    })
+
     renderCharacter(newCharacter);
     characterBarClickEvent(newCharacter);
     event.target.reset();
 }
+
+
+
+
 
 //Work on the functionality of this for your stat rolls button
 

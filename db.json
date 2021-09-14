@@ -1,19 +1,49 @@
 {
-   "Characters": [
-        {
-            "id": 1,
-            "name": "Aldon",
-            "image": "https://i.pinimg.com/originals/4a/3d/0f/4a3d0f6ac583a71d2169957b77365777.jpg",
-            "race": "Wood Elf",
-            "class": "Barbarian",
-            "stats": {
-                "charisma": 11,
-                "constitution": 16,
-                "dexterity": 14,
-                "intelligence": 9,
-                "strength": 16,
-                "wisdom": 9
-            }
-        }
-    ]
+  "Characters": [
+    {
+      "id": 1,
+      "name": "Aldon",
+      "image": "https://i.pinimg.com/originals/4a/3d/0f/4a3d0f6ac583a71d2169957b77365777.jpg",
+      "race": "Wood Elf",
+      "class": "Barbarian",
+      "stats": {
+        "charisma": 11,
+        "constitution": 16,
+        "dexterity": 14,
+        "intelligence": 9,
+        "strength": 16,
+        "wisdom": 9
+      }
+    },
+    {
+      "id": 2,
+      "name": "Reknat",
+      "image": "https://i.pinimg.com/originals/2e/ac/b4/2eacb4af1c88679b108431f42755dfb3.png",
+      "race": "Human",
+      "class": "Paladin",
+      "stats": {
+        "charisma": 9,
+        "constitution": 16,
+        "dexterity": 14,
+        "intelligence": 13,
+        "strength": 15,
+        "wisdom": 13
+      }
+    },
+    {
+      "name": "Pickachu",
+      "image": "https://static.wikia.nocookie.net/wii/images/8/89/Pikachu.jpg/revision/latest?cb=20140209205851",
+      "race": "Dwarf",
+      "class": "Wizard",
+      "stats": {
+        "charisma": 8,
+        "constitution": 3,
+        "dexterity": 6,
+        "intelligence": 17,
+        "strength": 1,
+        "wisdom": 15
+      },
+      "id": 3
+    }
+  ]
 }
