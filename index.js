@@ -34,6 +34,9 @@ function renderCharacter(character) {
     deleteButton.addEventListener('click', e => {
     const newDiv = document.querySelector(`#new-div-${character.name}`)
     newDiv.remove()
+    fetch(`${BASE_URL}/${character.id}`,{
+        method: "DELETE"
+    })
     
     const resetName = document.querySelector('#character-name')
     resetName.textContent = 'Character\'s Name'
@@ -111,7 +114,7 @@ function submitCharacter(event){
     
     // const showStatsList = document.querySelectorAll(".stat-roll");
     // const showStats = Array.from(showStatsList);
-
+    alert("Rolling your stats!")
     const newCharacter = {
         name: event.target['name-input'].value,
         image: event.target['img-input'].value,

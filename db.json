@@ -29,21 +29,6 @@
         "strength": 15,
         "wisdom": 13
       }
-    },
-    {
-      "name": "Pickachu",
-      "image": "https://static.wikia.nocookie.net/wii/images/8/89/Pikachu.jpg/revision/latest?cb=20140209205851",
-      "race": "Dwarf",
-      "class": "Wizard",
-      "stats": {
-        "charisma": 8,
-        "constitution": 3,
-        "dexterity": 6,
-        "intelligence": 17,
-        "strength": 1,
-        "wisdom": 15
-      },
-      "id": 3
     }
   ]
 }
