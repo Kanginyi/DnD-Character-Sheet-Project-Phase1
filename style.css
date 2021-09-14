@@ -1,5 +1,4 @@
 body {
-    /* background: linear-gradient(90deg, red, purple, blue); */
     font-family: 'Merriweather', serif;
     font-size: 18px;
     text-align: center;
@@ -11,8 +10,20 @@ body {
 }
 
 h1 {
-    color: blue;
+    color: rgb(255, 153, 0);
     font-family: 'MedievalSharp', cursive;
+    font-size: 50px;
+}
+
+#character-form {
+    border: solid;
+    border-color: forestgreen;
+    padding: 30px;
+    margin: auto;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35), 0 3px 3px rgba(0, 0, 0, .2);
+    text-align: center;
+    width: 350px;
+    background: white;
 }
 
 #character-container {
@@ -33,4 +44,5 @@ h1 {
     width: 250px;
     text-align: center;
     margin: auto;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35), 0 3px 3px rgba(0, 0, 0, .2);
 }
