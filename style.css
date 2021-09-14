@@ -23,7 +23,19 @@ h1 {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35), 0 3px 3px rgba(0, 0, 0, .2);
     text-align: center;
     width: 350px;
-    background: white;
+    background: rgba(255, 255, 255, 0.5);
+    transition: 0.5s
+}
+
+#character-stats {
+    border: solid;
+    border-color: forestgreen;
+    background: rgba(240, 240, 240, 0.6);
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35), 0 3px 3px rgba(0, 0, 0, .2);
+    transition: 0.5s;
 }
 
 #character-container {
@@ -34,15 +46,18 @@ h1 {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35), 0 3px 3px rgba(0, 0, 0, .2);
     text-align: center;
     width: 350px;
-    background: white;
+    background: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
 }
 
-#character-stats {
-    border: solid;
-    border-color: forestgreen;
-    background: white;
-    width: 250px;
-    text-align: center;
-    margin: auto;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35), 0 3px 3px rgba(0, 0, 0, .2);
+#character-form:hover {
+    box-shadow: 0 10px 15px 0 rgba(255, 255, 0, 0.4)
+}
+
+#character-container:hover {
+    box-shadow: 0 10px 15px 0 rgba(255, 255, 0, 0.4)
+}
+
+#img-input {
+    color: purple;
 }
