@@ -58,14 +58,92 @@ function submitCharacter(event){
 }
 
 //Work on the functionality of this for your stat rolls button
-// const statButton = document.querySelector(".dice");
-// statButton.addEventListener("click", e => {
-//     statButton.remove();
-//     const showStats = document.querySelector(".stat-roll");
 
-//     const newP = document.createElement("p");
-//     newP.textContent = Math.floor(Math.random() * 20) + 1;
+//***************Essentially rollStats1*****************************************/
+//This rollStats function instantly randomly rolls for the 6 traits
+// function rollStats () {
+//     const statButton = document.querySelector("#dice");
+//         statButton.addEventListener("click", e => {
+//             e.target.remove(); //Removes button
 
-//         showStats.appendChild(newP);
+//             const showStatsList = document.querySelectorAll(".stat-roll");
+//             const showStats = Array.from(showStatsList);
 
-// } )
+//             showStats.forEach(number => {
+//                 const statRoll = document.createElement("p");
+//                 statRoll.textContent = Math.floor(Math.random() * 20) + 1;
+//                 number.appendChild(statRoll);
+//             })
+//         })
+// }
+// rollStats();
+//*****************************************************************************/
+
+function characterStats () {
+    const charButton = document.querySelector("#char-dice");
+    charButton.addEventListener("click", e => {
+        e.target.remove();
+
+        const charisma = document.querySelector("#char-roll");
+        
+        const charRoll = document.createElement("p");
+        charRoll.textContent = Math.floor(Math.random() * 20) + 1;
+        charisma.appendChild(charRoll);
+    })
+
+    const constButton = document.querySelector("#const-dice");
+    constButton.addEventListener("click", e => {
+        e.target.remove();
+
+        const constitution = document.querySelector("#const-roll");
+        
+        const constRoll = document.createElement("p");
+        constRoll.textContent = Math.floor(Math.random() * 20) + 1;
+        constitution.appendChild(constRoll);
+    })
+
+    const dexButton = document.querySelector("#dex-dice");
+    dexButton.addEventListener("click", e => {
+        e.target.remove();
+
+        const dexterity = document.querySelector("#dex-roll");
+        
+        const dexRoll = document.createElement("p");
+        dexRoll.textContent = Math.floor(Math.random() * 20) + 1;
+        dexterity.appendChild(dexRoll);
+    })
+
+    const intButton = document.querySelector("#int-dice");
+    intButton.addEventListener("click", e => {
+        e.target.remove();
+
+        const intelligence = document.querySelector("#int-roll");
+        
+        const intRoll = document.createElement("p");
+        intRoll.textContent = Math.floor(Math.random() * 20) + 1;
+        intelligence.appendChild(intRoll);
+    })
+
+    const strButton = document.querySelector("#str-dice");
+    strButton.addEventListener("click", e => {
+        e.target.remove();
+
+        const strength = document.querySelector("#str-roll");
+        
+        const strRoll = document.createElement("p");
+        strRoll.textContent = Math.floor(Math.random() * 20) + 1;
+        strength.appendChild(strRoll);
+    })
+
+    const wisButton = document.querySelector("#wis-dice");
+    wisButton.addEventListener("click", e => {
+        e.target.remove();
+
+        const wisdom = document.querySelector("#wis-roll");
+        
+        const wisRoll = document.createElement("p");
+        wisRoll.textContent = Math.floor(Math.random() * 20) + 1;
+        wisdom.appendChild(wisRoll);
+    })
+}
+characterStats();
