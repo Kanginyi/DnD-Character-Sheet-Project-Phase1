@@ -43,7 +43,7 @@ function characterBarClickEvent(character) {
 }
 
 const characterForm = document.querySelector('#character-form');
-    characterForm.addEventListener('submit', submitCharacter);
+characterForm.addEventListener('submit', submitCharacter);
 
 function submitCharacter(event){
     event.preventDefault();
