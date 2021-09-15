@@ -51,7 +51,9 @@ function renderCharacter(character) {
     
     const resetImg = document.querySelector('#character-image')
     resetImg.src = 'https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673-960x960.png'
-    
+    resetAlt.alt = "Character's Name";
+    resetImg.title = "Character's Name";
+
     const resetRace = document.querySelector('#character-race')
     resetRace.textContent = 'Character\'s Race'
     
