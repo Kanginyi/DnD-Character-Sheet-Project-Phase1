@@ -14,13 +14,14 @@ function renderCharacter(character) {
     newDiv.id = `new-div-${character.name}`
 
     const barName = document.createElement("p");
+    barName.id = "new-character-name";
     barName.textContent = character.name;
 
     const barImage = document.createElement("img");
     barImage.src = character.image;
     barImage.alt = character.name;
     barImage.title = character.name;
-    barImage.width = 100;
+    barImage.width = 150;
 
     characterBar.appendChild(newDiv)
     newDiv.append(barName, barImage);
@@ -28,11 +29,13 @@ function renderCharacter(character) {
     barImage.addEventListener("click", e => characterBarClickEvent(character));
 
     const deleteButton = document.createElement('button')
+    deleteButton.id = "delete-button";
     deleteButton.textContent = "Delete"
     newDiv.appendChild(deleteButton)
     
     deleteButton.addEventListener('click', e => {
     const newDiv = document.querySelector(`#new-div-${character.name}`)
+    //Can add a confirm box here to make sure shit doesn't fuck up
     newDiv.remove()
     fetch(`${BASE_URL}/${character.id}`,{
         method: "DELETE"

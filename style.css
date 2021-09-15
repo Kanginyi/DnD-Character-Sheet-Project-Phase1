@@ -69,3 +69,20 @@ h1 {
     border: solid 2px rgb(204, 126, 9);
     border-radius: 5%;
 }
+
+#new-character-name {
+    background-color: teal;
+    width: 150px;
+    margin: auto;
+    color: black;
+    position: relative;
+    right: 27.5px;
+    top: 10px;
+}
+
+#delete-button {
+    background-color: rgb(180, 10, 10);
+    position: relative;
+    right: 54px;
+    bottom: 5px;
+}
