@@ -22,13 +22,13 @@
         "race": "Human",
         "class": "Paladin",
         "stats": {
-        "charisma": 11,
-        "constitution": 16,
-        "dexterity": 14,
-        "intelligence": 9,
-        "strength": 16,
-        "wisdom": 9
+          "charisma": 9,
+          "constitution": 16,
+          "dexterity": 10,
+          "intelligence": 8,
+          "strength": 18,
+          "wisdom": 5
         }
-    } 
+    }
   ]
 }
