@@ -36,7 +36,7 @@ function renderCharacter(character) {
     deleteButton.addEventListener('click', e => {
     const newDiv = document.querySelector(`#new-div-${character.name}`)
     
-    let text = confirm("Are you sure? This cannot be undone.")
+    let text = confirm("Are you sure? This cannot be undone.");
     if (text === true) {
         newDiv.remove();
         fetch(`${BASE_URL}/${character.id}`, {
