@@ -71,13 +71,17 @@ h1 {
 }
 
 #new-character-name {
-    background-color: teal;
+    background-color: rgb(5, 153, 153);
     width: 150px;
     margin: auto;
     color: black;
     position: relative;
-    right: 27.5px;
+    right: 27.3px;
     top: 10px;
+}
+
+#new-character-name:hover {
+    box-shadow: 0 10px 15px 0 rgba(255, 255, 0, 0.4)
 }
 
 #delete-button {

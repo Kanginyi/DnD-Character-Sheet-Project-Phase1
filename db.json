@@ -16,19 +16,19 @@
       }
     },
     {
-      "id": 2,
-      "name": "Reknat",
-      "image": "https://i.pinimg.com/originals/2e/ac/b4/2eacb4af1c88679b108431f42755dfb3.png",
-      "race": "Human",
-      "class": "Paladin",
-      "stats": {
+        "id": 2,
+        "name": "Reknat",
+        "image": "https://i.pinimg.com/originals/2e/ac/b4/2eacb4af1c88679b108431f42755dfb3.png",
+        "race": "Human",
+        "class": "Paladin",
+        "stats": {
         "charisma": 11,
         "constitution": 16,
         "dexterity": 14,
         "intelligence": 9,
         "strength": 16,
         "wisdom": 9
-      }
-    }
+        }
+    } 
   ]
 }
