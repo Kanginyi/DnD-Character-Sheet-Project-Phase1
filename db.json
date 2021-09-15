@@ -16,19 +16,34 @@
       }
     },
     {
-        "id": 2,
-        "name": "Reknat",
-        "image": "https://i.pinimg.com/originals/2e/ac/b4/2eacb4af1c88679b108431f42755dfb3.png",
-        "race": "Human",
-        "class": "Paladin",
-        "stats": {
-          "charisma": 9,
-          "constitution": 16,
-          "dexterity": 10,
-          "intelligence": 8,
-          "strength": 18,
-          "wisdom": 5
-        }
+      "id": 2,
+      "name": "Reknat",
+      "image": "https://i.pinimg.com/originals/2e/ac/b4/2eacb4af1c88679b108431f42755dfb3.png",
+      "race": "Human",
+      "class": "Paladin",
+      "stats": {
+        "charisma": 9,
+        "constitution": 16,
+        "dexterity": 10,
+        "intelligence": 8,
+        "strength": 18,
+        "wisdom": 5
+      }
+    },
+    {
+      "name": "Pikachu",
+      "image": "https://static.wikia.nocookie.net/wii/images/8/89/Pikachu.jpg/revision/latest?cb=20140209205851",
+      "race": "Gnome",
+      "class": "Wizard",
+      "stats": {
+        "charisma": 20,
+        "constitution": 2,
+        "dexterity": 8,
+        "intelligence": 7,
+        "strength": 14,
+        "wisdom": 3
+      },
+      "id": 3
     }
   ]
 }

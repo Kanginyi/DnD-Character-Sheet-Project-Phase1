@@ -15,6 +15,12 @@ h1 {
     font-size: 50px;
 }
 
+#character-bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 #character-form {
     border: solid 4px forestgreen;
     border-radius: 5%;
@@ -76,7 +82,7 @@ h1 {
     margin: auto;
     color: black;
     position: relative;
-    right: 27.3px;
+    right: 27px;
     top: 10px;
 }
 

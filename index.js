@@ -22,6 +22,7 @@ function renderCharacter(character) {
     barImage.alt = character.name;
     barImage.title = character.name;
     barImage.width = 150;
+    barImage.height = 210;
 
     characterBar.appendChild(newDiv)
     newDiv.append(barName, barImage);
