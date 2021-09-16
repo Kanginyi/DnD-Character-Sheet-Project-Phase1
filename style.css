@@ -64,11 +64,57 @@ h1 {
     box-shadow: 0 10px 15px 0 rgba(255, 255, 0, 0.4)
 }
 
+#character-sort:hover {
+    box-shadow: 0 10px 15px 0 rgba(255, 255, 0, 0.4)
+}
+
 #submit-button {
     background-color: rgb(204, 126, 9);
     color: white;
     width: 150px;
     height: 25px;
+}
+
+#submit-button:hover {
+    animation-name: background-color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes background-color {
+    0% {
+        background-color: rgb(204, 126, 9);
+    }
+    10% {
+        background-color: rgb(230,191,5);
+    }
+    20% {
+        background-color: rgb(140,198,28);
+    }
+    30% {
+        background-color: rgb(70,163,14);
+    }
+    40% {
+        background-color: rgb(30, 145, 120);
+    }
+    50% {
+        background-color: rgb(15,73,188);
+    }
+    60% {
+        background-color: rgb(98, 0, 255);
+    }
+    70% {
+        background-color: rgb(113,0,192);
+    }
+    80% {
+        background-color: rgb(176,65,215);
+    }
+    90% {
+        background-color: rgb(224, 40, 138);
+    }
+    100% {
+        background-color: rgb(251, 33, 60);
+    }
 }
 
 #character-image {
@@ -111,4 +157,8 @@ h1 {
     width: 150px;
     height: 25px;
     margin: 2px;
+}
+
+#flex-box {
+    display: flex;
 }
