@@ -45,13 +45,15 @@ function renderCharacter(character) {
             })
         }
 
-        
+    
         const resetName = document.querySelector('#character-name')
         resetName.textContent = 'Character\'s Name'
         
         const resetImg = document.querySelector('#character-image')
         resetImg.src = 'https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673-960x960.png'
-        
+        resetAlt.alt = "Character's Name";
+        resetImg.title = "Character's Name";
+
         const resetRace = document.querySelector('#character-race')
         resetRace.textContent = 'Character\'s Race'
         
@@ -60,24 +62,6 @@ function renderCharacter(character) {
         
         const resetCha = document.querySelector('#char-stat')
         resetCha.textContent = 'CHA:'
-    
-    const resetName = document.querySelector('#character-name')
-    resetName.textContent = 'Character\'s Name'
-    
-    const resetImg = document.querySelector('#character-image')
-    resetImg.src = 'https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673-960x960.png'
-    resetAlt.alt = "Character's Name";
-    resetImg.title = "Character's Name";
-
-    const resetRace = document.querySelector('#character-race')
-    resetRace.textContent = 'Character\'s Race'
-    
-    const resetClass = document.querySelector('#character-class')
-    resetClass.textContent = 'Character\'s Class'
-    
-    const resetCha = document.querySelector('#char-stat')
-    resetCha.textContent = 'CHA:'
-
 
         const resetCon = document.querySelector('#con-stat')
         resetCon.textContent = 'CON:'
