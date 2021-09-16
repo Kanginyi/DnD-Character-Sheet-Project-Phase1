@@ -50,7 +50,7 @@ function renderCharacter(character) {
         
         const resetImg = document.querySelector('#character-image')
         resetImg.src = 'https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673-960x960.png'
-        resetAlt.alt = "Character's Name";
+        resetImg.alt = "Character's Name";
         resetImg.title = "Character's Name";
 
         const resetRace = document.querySelector('#character-race')
@@ -152,31 +152,29 @@ function submitCharacter(event){
     event.target.reset();
 }
 
-let characterArray;
-
-function sortCharacters() {
+function charismaFetch() {
     fetch(BASE_URL)
     .then(resp => resp.json())
     .then(data => {
-        characterArray = data
+            charismaSort(data)
     })
 }
-sortCharacters()
+charismaFetch()
 
 //Here starts all of the functions to sort by stats
-function charismaSort() {
+function charismaSort(characterArray) {
     const byCharisma = document.querySelector("#charisma-sort");
 
     byCharisma.addEventListener("click", e => {
-        let newArray = [...characterArray];
+        console.log(characterArray)
+        charismaFetch()
 
         const overallDiv = document.querySelector("#overall-div");
-
         overallDiv.textContent = ""
 
-        newArray.sort((a, b) =>  b.stats.charisma - a.stats.charisma);
+        characterArray.sort((a, b) =>  b.stats.charisma - a.stats.charisma);
 
-        newArray.forEach(character => {
+        characterArray.forEach(character => {
             const newCharP = document.createElement("p");
 
             newCharP.id = `${character.name}`;
@@ -186,21 +184,28 @@ function charismaSort() {
         })
     })
 }
-charismaSort();
 
-function constitutionSort() {
+function constitutionFetch() {
+    fetch(BASE_URL)
+    .then(resp => resp.json())
+    .then(data => {
+            constitutionSort(data)
+    })
+}
+constitutionFetch()
+
+function constitutionSort(data) {
     const byConstitution = document.querySelector("#constitution-sort");
 
     byConstitution.addEventListener("click", e => {
-        let newArray = [...characterArray];
-
+        constitutionFetch()
+        
         const overallDiv = document.querySelector("#overall-div");
-
         overallDiv.textContent = ""
 
-        newArray.sort((a, b) =>  b.stats.constitution - a.stats.constitution);
+        data.sort((a, b) =>  b.stats.constitution - a.stats.constitution);
 
-        newArray.forEach(character => {
+        data.forEach(character => {
             const newConP = document.createElement("p");
 
             newConP.id = `${character.name}`;
@@ -210,21 +215,28 @@ function constitutionSort() {
         })
     })
 }
-constitutionSort();
 
-function dexteritySort() {
+function dexterityFetch() {
+    fetch(BASE_URL)
+    .then(resp => resp.json())
+    .then(data => {
+            dexteritySort(data)
+    })
+}
+dexterityFetch()
+
+function dexteritySort(data) {
     const byDexterity = document.querySelector("#dexterity-sort");
 
     byDexterity.addEventListener("click", e => {
-        let newArray = [...characterArray];
-
+        dexterityFetch()
+        
         const overallDiv = document.querySelector("#overall-div");
-
         overallDiv.textContent = ""
 
-        newArray.sort((a, b) =>  b.stats.dexterity - a.stats.dexterity);
+        data.sort((a, b) =>  b.stats.dexterity - a.stats.dexterity);
 
-        newArray.forEach(character => {
+        data.forEach(character => {
             const newDexP = document.createElement("p");
 
             newDexP.id = `${character.name}`;
@@ -234,21 +246,28 @@ function dexteritySort() {
         })
     })
 }
-dexteritySort();
 
-function intelligenceSort() {
+function intelligenceFetch() {
+    fetch(BASE_URL)
+    .then(resp => resp.json())
+    .then(data => {
+            intelligenceSort(data)
+    })
+}
+intelligenceFetch()
+
+function intelligenceSort(data) {
     const byIntelligence = document.querySelector("#intelligence-sort");
 
     byIntelligence.addEventListener("click", e => {
-        let newArray = [...characterArray];
+        intelligenceFetch()
 
         const overallDiv = document.querySelector("#overall-div");
-
         overallDiv.textContent = ""
 
-        newArray.sort((a, b) =>  b.stats.intelligence - a.stats.intelligence);
+        data.sort((a, b) =>  b.stats.intelligence - a.stats.intelligence);
 
-        newArray.forEach(character => {
+        data.forEach(character => {
             const newIntP = document.createElement("p");
 
             newIntP.id = `${character.name}`;
@@ -258,21 +277,28 @@ function intelligenceSort() {
         })
     })
 }
-intelligenceSort();
 
-function strengthSort() {
+function strengthFetch() {
+    fetch(BASE_URL)
+    .then(resp => resp.json())
+    .then(data => {
+            strengthSort(data)
+    })
+}
+strengthFetch()
+
+function strengthSort(data) {
     const byStrength = document.querySelector("#strength-sort");
 
     byStrength.addEventListener("click", e => {
-        let newArray = [...characterArray];
+        strengthFetch()
 
         const overallDiv = document.querySelector("#overall-div");
-
         overallDiv.textContent = ""
 
-        newArray.sort((a, b) =>  b.stats.strength - a.stats.strength);
+        data.sort((a, b) =>  b.stats.strength - a.stats.strength);
 
-        newArray.forEach(character => {
+        data.forEach(character => {
             const newStrP = document.createElement("p");
 
             newStrP.id = `${character.name}`;
@@ -282,21 +308,28 @@ function strengthSort() {
         })
     })
 }
-strengthSort();
 
-function wisdomSort() {
+function wisdomFetch() {
+    fetch(BASE_URL)
+    .then(resp => resp.json())
+    .then(data => {
+            wisdomSort(data)
+    })
+}
+wisdomFetch()
+
+function wisdomSort(data) {
     const byWisdom = document.querySelector("#wisdom-sort");
 
     byWisdom.addEventListener("click", e => {
-        let newArray = [...characterArray];
+        wisdomFetch()
 
         const overallDiv = document.querySelector("#overall-div");
-
         overallDiv.textContent = ""
 
-        newArray.sort((a, b) =>  b.stats.wisdom - a.stats.wisdom);
+        data.sort((a, b) =>  b.stats.wisdom - a.stats.wisdom);
 
-        newArray.forEach(character => {
+        data.forEach(character => {
             const newWisP = document.createElement("p");
 
             newWisP.id = `${character.name}`;
@@ -306,4 +339,3 @@ function wisdomSort() {
         })
     })
 }
-wisdomSort();
