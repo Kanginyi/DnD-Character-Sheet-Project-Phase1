@@ -75,9 +75,6 @@ function renderCharacter(character) {
 
     const resetWis = document.querySelector('#wis-stat')
     resetWis.textContent = 'WIS:'
-
-    const charismaSort = document.querySelector('#charisma-sort')
-    charismaSort.addEventListener('click', () => sortCharacters(character))
 })
 }
 
@@ -154,39 +151,18 @@ function submitCharacter(event){
     event.target.reset();
 }
 
+let characterArray = null
 
-
-function sortCharacters(a, b) {
-    a.stats.charisma - b.stats.charisma
-
-    fetch(BASE_URL), {
-        method: "PATCH",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify({a, b})
-    }
+function sortCharacters() {
+    fetch(BASE_URL)
+    .then(resp => resp.json())
+    .then(data => {
+        characterArray = data
+    })
 }
 
-// sortCharacters()
-        
+sortCharacters()
+   
 // function sortStats(a, b){
-//     return a.stats.charsima - b.stats.charisma;
+//     a.stats.charsima - b.stats.charisma;
 // }
-
-// const charismaButton = document.querySelector('#charisma-sort')
-// charismaButton.addEventListener('click', sortCharacters)
-// let characterArray;
-
-// const returnData = async () => {
-//     const returnStats = {
-//         headers: { 'Content-Type': 'application/json'},
-//         method: 'GET',
-//     }
-//     const res = await
-
-// fetch(BASE_URL, returnStats)
-//     characterArray = await res.json()
-// }
-
-// console.log(characterArray)
