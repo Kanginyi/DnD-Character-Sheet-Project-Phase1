@@ -35,16 +35,31 @@ function renderCharacter(character) {
     newDiv.appendChild(deleteButton)
     
     deleteButton.addEventListener('click', e => {
-    const newDiv = document.querySelector(`#new-div-${character.name}`)
-    
-    let text = confirm("Are you sure? This cannot be undone.");
-    if (text === true) {
-        newDiv.remove();
-        fetch(`${BASE_URL}/${character.id}`, {
-            method: "DELETE"
-        })
-    }
+        const newDiv = document.querySelector(`#new-div-${character.name}`)
+        
+        let text = confirm("Are you sure? This cannot be undone.");
+        if (text === true) {
+            newDiv.remove();
+            fetch(`${BASE_URL}/${character.id}`, {
+                method: "DELETE"
+            })
+        }
 
+        
+        const resetName = document.querySelector('#character-name')
+        resetName.textContent = 'Character\'s Name'
+        
+        const resetImg = document.querySelector('#character-image')
+        resetImg.src = 'https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673-960x960.png'
+        
+        const resetRace = document.querySelector('#character-race')
+        resetRace.textContent = 'Character\'s Race'
+        
+        const resetClass = document.querySelector('#character-class')
+        resetClass.textContent = 'Character\'s Class'
+        
+        const resetCha = document.querySelector('#char-stat')
+        resetCha.textContent = 'CHA:'
     
     const resetName = document.querySelector('#character-name')
     resetName.textContent = 'Character\'s Name'
@@ -63,21 +78,22 @@ function renderCharacter(character) {
     const resetCha = document.querySelector('#char-stat')
     resetCha.textContent = 'CHA:'
 
-    const resetCon = document.querySelector('#con-stat')
-    resetCon.textContent = 'CON:'
 
-    const resetDex = document.querySelector('#dex-stat')
-    resetDex.textContent = 'DEX:'
+        const resetCon = document.querySelector('#con-stat')
+        resetCon.textContent = 'CON:'
 
-    const resetInt = document.querySelector('#int-stat')
-    resetInt.textContent = 'INT:'
+        const resetDex = document.querySelector('#dex-stat')
+        resetDex.textContent = 'DEX:'
 
-    const resetStr = document.querySelector('#str-stat')
-    resetStr.textContent = 'STR:'
+        const resetInt = document.querySelector('#int-stat')
+        resetInt.textContent = 'INT:'
 
-    const resetWis = document.querySelector('#wis-stat')
-    resetWis.textContent = 'WIS:'
-})
+        const resetStr = document.querySelector('#str-stat')
+        resetStr.textContent = 'STR:'
+
+        const resetWis = document.querySelector('#wis-stat')
+        resetWis.textContent = 'WIS:'
+    })
 }
 
 function characterBarClickEvent(character) {
@@ -147,8 +163,163 @@ function submitCharacter(event){
         },
         body: JSON.stringify(newCharacter)
     })
-
     renderCharacter(newCharacter);
     characterBarClickEvent(newCharacter);
     event.target.reset();
 }
+
+let characterArray;
+
+function sortCharacters() {
+    fetch(BASE_URL)
+    .then(resp => resp.json())
+    .then(data => {
+        characterArray = data
+    })
+}
+sortCharacters()
+
+//Here starts all of the functions to sort by stats
+function charismaSort() {
+    const byCharisma = document.querySelector("#charisma-sort");
+
+    byCharisma.addEventListener("click", e => {
+        let newArray = [...characterArray];
+
+        const overallDiv = document.querySelector("#overall-div");
+
+        overallDiv.textContent = ""
+
+        newArray.sort((a, b) =>  b.stats.charisma - a.stats.charisma);
+
+        newArray.forEach(character => {
+            const newCharP = document.createElement("p");
+
+            newCharP.id = `${character.name}`;
+            newCharP.textContent = `${character.name}'s Charisma: ${character.stats.charisma}`;
+    
+            overallDiv.appendChild(newCharP);
+        })
+    })
+}
+charismaSort();
+
+function constitutionSort() {
+    const byConstitution = document.querySelector("#constitution-sort");
+
+    byConstitution.addEventListener("click", e => {
+        let newArray = [...characterArray];
+
+        const overallDiv = document.querySelector("#overall-div");
+
+        overallDiv.textContent = ""
+
+        newArray.sort((a, b) =>  b.stats.constitution - a.stats.constitution);
+
+        newArray.forEach(character => {
+            const newConP = document.createElement("p");
+
+            newConP.id = `${character.name}`;
+            newConP.textContent = `${character.name}'s Constitution: ${character.stats.constitution}`;
+    
+            overallDiv.appendChild(newConP);
+        })
+    })
+}
+constitutionSort();
+
+function dexteritySort() {
+    const byDexterity = document.querySelector("#dexterity-sort");
+
+    byDexterity.addEventListener("click", e => {
+        let newArray = [...characterArray];
+
+        const overallDiv = document.querySelector("#overall-div");
+
+        overallDiv.textContent = ""
+
+        newArray.sort((a, b) =>  b.stats.dexterity - a.stats.dexterity);
+
+        newArray.forEach(character => {
+            const newDexP = document.createElement("p");
+
+            newDexP.id = `${character.name}`;
+            newDexP.textContent = `${character.name}'s Dexterity: ${character.stats.dexterity}`;
+    
+            overallDiv.appendChild(newDexP);
+        })
+    })
+}
+dexteritySort();
+
+function intelligenceSort() {
+    const byIntelligence = document.querySelector("#intelligence-sort");
+
+    byIntelligence.addEventListener("click", e => {
+        let newArray = [...characterArray];
+
+        const overallDiv = document.querySelector("#overall-div");
+
+        overallDiv.textContent = ""
+
+        newArray.sort((a, b) =>  b.stats.intelligence - a.stats.intelligence);
+
+        newArray.forEach(character => {
+            const newIntP = document.createElement("p");
+
+            newIntP.id = `${character.name}`;
+            newIntP.textContent = `${character.name}'s Intelligence: ${character.stats.intelligence}`;
+    
+            overallDiv.appendChild(newIntP);
+        })
+    })
+}
+intelligenceSort();
+
+function strengthSort() {
+    const byStrength = document.querySelector("#strength-sort");
+
+    byStrength.addEventListener("click", e => {
+        let newArray = [...characterArray];
+
+        const overallDiv = document.querySelector("#overall-div");
+
+        overallDiv.textContent = ""
+
+        newArray.sort((a, b) =>  b.stats.strength - a.stats.strength);
+
+        newArray.forEach(character => {
+            const newStrP = document.createElement("p");
+
+            newStrP.id = `${character.name}`;
+            newStrP.textContent = `${character.name}'s Strength: ${character.stats.strength}`;
+    
+            overallDiv.appendChild(newStrP);
+        })
+    })
+}
+strengthSort();
+
+function wisdomSort() {
+    const byWisdom = document.querySelector("#wisdom-sort");
+
+    byWisdom.addEventListener("click", e => {
+        let newArray = [...characterArray];
+
+        const overallDiv = document.querySelector("#overall-div");
+
+        overallDiv.textContent = ""
+
+        newArray.sort((a, b) =>  b.stats.wisdom - a.stats.wisdom);
+
+        newArray.forEach(character => {
+            const newWisP = document.createElement("p");
+
+            newWisP.id = `${character.name}`;
+            newWisP.textContent = `${character.name}'s Wisdom: ${character.stats.wisdom}`;
+    
+            overallDiv.appendChild(newWisP);
+        })
+    })
+}
+wisdomSort();
