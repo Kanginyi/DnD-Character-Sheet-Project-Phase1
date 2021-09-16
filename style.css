@@ -22,7 +22,7 @@ h1 {
 }
 
 #character-form {
-    border: solid 4px forestgreen;
+    border: solid 4px rgb(68, 80, 68);
     border-radius: 5%;
     padding: 30px;
     margin: auto;
@@ -30,11 +30,12 @@ h1 {
     text-align: center;
     width: 350px;
     background: rgba(255, 255, 255, 0.6);
-    transition: 0.5s
+    transition: 0.5s;
+    line-height: 32px;
 }
 
 #character-stats {
-    border: solid 4px forestgreen;
+    border: solid 4px rgb(68, 80, 68);
     border-radius: 5%;
     background: rgba(240, 240, 240, 0.6);
     width: 250px;
@@ -45,7 +46,7 @@ h1 {
 }
 
 #character-container {
-    border: solid 4px forestgreen;
+    border: solid 4px rgb(68, 80, 68);
     border-radius: 5%;
     padding: 30px;
     margin: auto;
@@ -57,15 +58,15 @@ h1 {
 }
 
 #character-form:hover {
-    box-shadow: 0 10px 15px 0 rgba(255, 255, 0, 0.4)
+    box-shadow: 0 10px 15px 0 rgba(226, 219, 200, 0.4)
 }
 
 #character-container:hover {
-    box-shadow: 0 10px 15px 0 rgba(255, 255, 0, 0.4)
+    box-shadow: 0 10px 15px 0 rgba(226, 219, 200, 0.4)
 }
 
 #character-sort:hover {
-    box-shadow: 0 10px 15px 0 rgba(255, 255, 0, 0.4)
+    box-shadow: 0 10px 15px 0 rgba(226, 219, 200, 0.4)
 }
 
 #submit-button {
@@ -140,7 +141,7 @@ h1 {
 }
 
 #character-sort {
-    border: solid 4px forestgreen;
+    border: solid 4px rgb(68, 80, 68);
     border-radius: 5%;
     padding: 30px;
     margin: auto;
@@ -158,7 +159,12 @@ h1 {
     height: 25px;
     margin: 2px;
 }
-/* 
-#character-sort {
+
+/* #parent-character-sort {
     display: flex;
-} */
+}
+
+#parent-character-form {
+    display: flex;
+}
+ */
