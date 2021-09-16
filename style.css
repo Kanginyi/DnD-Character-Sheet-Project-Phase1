@@ -105,48 +105,10 @@ h1 {
     transition: 0.5s;
 }
 
-#charisma-sort {
+.all-sort {
     background-color: rgb(204, 126, 9);
     color: white;
     width: 150px;
     height: 25px;
+    margin: 2px;
 }
-
-#constitution-sort {
-    background-color: rgb(204, 126, 9);
-    color: white;
-    width: 150px;
-    height: 25px;
-}
-
-#dexterity-sort {
-    background-color: rgb(204, 126, 9);
-    color: white;
-    width: 150px;
-    height: 25px;
-}
-
-#intelligence-sort {
-    background-color: rgb(204, 126, 9);
-    color: white;
-    width: 150px;
-    height: 25px;
-}
-
-#strength-sort {
-    background-color: rgb(204, 126, 9);
-    color: white;
-    width: 150px;
-    height: 25px;
-}
-
-#wisdom-sort {
-    background-color: rgb(204, 126, 9);
-    color: white;
-    width: 150px;
-    height: 25px;
-}
-/* .character-input {
-    background-color: pink;
-}
- */
