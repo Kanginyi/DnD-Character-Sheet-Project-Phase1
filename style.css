@@ -93,6 +93,59 @@ h1 {
     bottom: 5px;
 }
 
+#character-sort {
+    border: solid 4px forestgreen;
+    border-radius: 5%;
+    padding: 30px;
+    margin: auto;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35), 0 3px 3px rgba(0, 0, 0, .2);
+    text-align: center;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+}
+
+#charisma-sort {
+    background-color: rgb(204, 126, 9);
+    color: white;
+    width: 150px;
+    height: 25px;
+}
+
+#constitution-sort {
+    background-color: rgb(204, 126, 9);
+    color: white;
+    width: 150px;
+    height: 25px;
+}
+
+#dexterity-sort {
+    background-color: rgb(204, 126, 9);
+    color: white;
+    width: 150px;
+    height: 25px;
+}
+
+#intelligence-sort {
+    background-color: rgb(204, 126, 9);
+    color: white;
+    width: 150px;
+    height: 25px;
+}
+
+#strength-sort {
+    background-color: rgb(204, 126, 9);
+    color: white;
+    width: 150px;
+    height: 25px;
+}
+
+#wisdom-sort {
+    background-color: rgb(204, 126, 9);
+    color: white;
+    width: 150px;
+    height: 25px;
+}
 /* .character-input {
     background-color: pink;
 }

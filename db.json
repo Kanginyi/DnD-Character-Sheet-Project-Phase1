@@ -31,6 +31,7 @@
       }
     },
     {
+<<<<<<< HEAD
       "name": "Pikachu",
       "image": "https://static.wikia.nocookie.net/wii/images/8/89/Pikachu.jpg/revision/latest?cb=20140209205851",
       "race": "Halfling",
@@ -44,6 +45,21 @@
         "wisdom": 19
       },
       "id": 4
+=======
+      "id": 3,
+      "name": "Gandalf",
+      "image": "https://i.pinimg.com/originals/2e/ac/b4/2eacb4af1c88679b108431f42755dfb3.png",
+      "race": "Human",
+      "class": "Wizard",
+      "stats": {
+        "charisma": 20,
+        "constitution": 16,
+        "dexterity": 10,
+        "intelligence": 8,
+        "strength": 18,
+        "wisdom": 5
+      }
+>>>>>>> 766f32fb92da9a6cda0aeeccf68642bbf3771767
     }
   ]
 }
