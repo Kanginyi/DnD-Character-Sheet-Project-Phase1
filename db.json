@@ -44,6 +44,21 @@
         "strength": 18,
         "wisdom": 5
       }
+    },
+    {
+      "name": "Pikachu",
+      "image": "https://static.wikia.nocookie.net/wii/images/8/89/Pikachu.jpg/revision/latest?cb=20140209205851",
+      "race": "Halfling",
+      "class": "Warlock",
+      "stats": {
+        "charisma": 15,
+        "constitution": 7,
+        "dexterity": 8,
+        "intelligence": 17,
+        "strength": 8,
+        "wisdom": 19
+      },
+      "id": 4
     }
   ]
 }
