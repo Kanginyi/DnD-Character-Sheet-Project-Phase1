@@ -29,21 +29,6 @@
         "strength": 18,
         "wisdom": 5
       }
-    },
-    {
-      "name": "Pikachu",
-      "image": "https://static.wikia.nocookie.net/wii/images/8/89/Pikachu.jpg/revision/latest?cb=20140209205851",
-      "race": "Gnome",
-      "class": "Wizard",
-      "stats": {
-        "charisma": 20,
-        "constitution": 2,
-        "dexterity": 8,
-        "intelligence": 7,
-        "strength": 14,
-        "wisdom": 3
-      },
-      "id": 3
     }
   ]
 }
