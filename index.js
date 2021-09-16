@@ -40,10 +40,10 @@ function renderCharacter(character) {
         let text = confirm("Are you sure? This cannot be undone.");
         if (text === true) {
             newDiv.remove();
+
             fetch(`${BASE_URL}/${character.id}`, {
                 method: "DELETE"
             })
-        }
     
         const resetName = document.querySelector('#character-name')
         resetName.textContent = 'Character\'s Name'
@@ -76,6 +76,7 @@ function renderCharacter(character) {
 
         const resetWis = document.querySelector('#wis-stat')
         resetWis.textContent = 'WIS:'
+      }
     })
 }
 

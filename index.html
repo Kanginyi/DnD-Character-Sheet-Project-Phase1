@@ -22,80 +22,83 @@
     <div id ="character-bar">
         <!--Show character names here/placeholder images-->
     </div>
-    <div id ="character-sort">
-        <h3>Sort Your Characters</h3>
-        <button class="all-sort" id="charisma-sort">By Charisma</button>
-        <button class="all-sort" id="constitution-sort">By Constitution</button>
-        <button class="all-sort" id="dexterity-sort">By Dexterity</button>
-        <button class="all-sort" id="intelligence-sort">By Intelligence</button>
-        <button class="all-sort" id="strength-sort">By Strength</button>
-        <button class="all-sort" id="wisdom-sort">By Wisdom</button>
-        <div id="overall-div">
-            <p id="hidden-p"></p>
-        </div>
-    </div>
     <br>
     <div>
-        <form id="character-form">
-            <label><strong>Name:</strong></label>
-            <input type="text" class="character-input" id="name-input" placeholder="Character's Name" required><br>
-            <label><strong>Image:</strong></label>
-            <input type="text" class="character-input" id="img-input" placeholder="Add a link!" required><br>
-            <label><strong>Race:</strong></label>
-            <select class="character-input" id="race-input">
-                <option value="Dragonborn">Dragonborn</option>            
-                <option value="Dwarf">Dwarf</option>
-                <option value="Elf">Elf</option>
-                <option value="Gnome">Gnome</option>
-                <option value="Human">Human</option>
-                <option value="Halfling">Halfling</option>
-                <option value="Half-Elf">Half-Elf</option>
-                <option value="Half-Orc">Half-Orc</option>
-                <option value="Tiefling">Tiefling</option>
-            </select>
-            <label><strong>Class:</strong></label>
-            <select class="character-input" id="class-input">
-                <option value="Barbarian">Barbarian</option>
-                <option value="Bard">Bard</option>
-                <option value="Cleric">Cleric</option>
-                <option value="Druid">Druid</option>
-                <option value="Fighter">Fighter</option>
-                <option value="Monk">Monk</option>
-                <option value="Paladin">Paladin</option>
-                <option value="Ranger">Ranger</option>
-                <option value="Rogue">Rogue</option>
-                <option value="Sorcerer">Sorcerer</option>
-                <option value="Warlock">Warlock</option>
-                <option value="Wizard">Wizard</option>
-            </select><br><br>
-            <div id="character-stats">
-                <!-- <button id="dice">Roll For Stats</button> -->
-                <p class="stat-roll" id="char-roll">Charisma: ?</p>
-                <p class="stat-roll" id="con-roll">Constitution: ?</p>
-                <p class="stat-roll" id="dex-roll">Dexterity: ?</p>
-                <p class="stat-roll" id="int-roll">Intelligence: ?</p>
-                <p class="stat-roll" id="str-roll">Strength: ?</p>
-                <p class="stat-roll" id="wis-roll">Wisdom: ?</p>
+        <div id="character-sort">
+            <h3>Sort Your Characters</h3>
+            <button class="all-sort" id="charisma-sort">By Charisma</button>
+            <button class="all-sort" id="constitution-sort">By Constitution</button>
+            <button class="all-sort" id="dexterity-sort">By Dexterity</button>
+            <button class="all-sort" id="intelligence-sort">By Intelligence</button>
+            <button class="all-sort" id="strength-sort">By Strength</button>
+            <button class="all-sort" id="wisdom-sort">By Wisdom</button>
+            <div id="overall-div">
+                <p id="hidden-p"></p>
             </div>
-            <br>
-            <!--This is a button to submit all the information-->
-            <input id="submit-button" type="submit" value="Create Character!">
-        </form>
-    </div>
-    <br><br>
-    <div id="character-container">
-        <div id="detailed-info">
-            <h3 id="character-name">Character's Name</h3>
-            <img id="character-image" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673-960x960.png" alt="Placeholder Image" title="Character Image" width="300px">
-            <h4 id="character-race">Character's Race</h4>
-            <h4 id="character-class">Character's Class</h4>
-            <p class="display-stats" id="char-stat"><strong>CHA:</strong></p>
-            <p class="display-stats" id="con-stat"><strong>CON:</strong></p>
-            <p class="display-stats" id="dex-stat"><strong>DEX:</strong></p>
-            <p class="display-stats" id="int-stat"><strong>INT:</strong></p>
-            <p class="display-stats" id="str-stat"><strong>STR:</strong></p>
-            <p class="display-stats" id="wis-stat"><strong>WIS:</strong></p>
         </div>
     </div>
+        <br>
+        <div>
+            <form id="character-form">
+                <label><strong>Name:</strong></label>
+                <input type="text" class="character-input" id="name-input" placeholder="Character's Name" required><br>
+                <label><strong>Image:</strong></label>
+                <input type="text" class="character-input" id="img-input" placeholder="Add a link!" required><br>
+                <label><strong>Race:</strong></label>
+                <select class="character-input" id="race-input">
+                    <option value="Dragonborn">Dragonborn</option>            
+                    <option value="Dwarf">Dwarf</option>
+                    <option value="Elf">Elf</option>
+                    <option value="Gnome">Gnome</option>
+                    <option value="Human">Human</option>
+                    <option value="Halfling">Halfling</option>
+                    <option value="Half-Elf">Half-Elf</option>
+                    <option value="Half-Orc">Half-Orc</option>
+                    <option value="Tiefling">Tiefling</option>
+                </select>
+                <label><strong>Class:</strong></label>
+                <select class="character-input" id="class-input">
+                    <option value="Barbarian">Barbarian</option>
+                    <option value="Bard">Bard</option>
+                    <option value="Cleric">Cleric</option>
+                    <option value="Druid">Druid</option>
+                    <option value="Fighter">Fighter</option>
+                    <option value="Monk">Monk</option>
+                    <option value="Paladin">Paladin</option>
+                    <option value="Ranger">Ranger</option>
+                    <option value="Rogue">Rogue</option>
+                    <option value="Sorcerer">Sorcerer</option>
+                    <option value="Warlock">Warlock</option>
+                    <option value="Wizard">Wizard</option>
+                </select><br><br>
+                <div id="character-stats">
+                    <!-- <button id="dice">Roll For Stats</button> -->
+                    <p class="stat-roll" id="char-roll">Charisma: ?</p>
+                    <p class="stat-roll" id="con-roll">Constitution: ?</p>
+                    <p class="stat-roll" id="dex-roll">Dexterity: ?</p>
+                    <p class="stat-roll" id="int-roll">Intelligence: ?</p>
+                    <p class="stat-roll" id="str-roll">Strength: ?</p>
+                    <p class="stat-roll" id="wis-roll">Wisdom: ?</p>
+                </div>
+                <br>
+                <!--This is a button to submit all the information-->
+                <input id="submit-button" type="submit" value="Create Character!">
+            </form>
+        </div>
+        <br><br>
+        <div id="character-container">
+            <div id="detailed-info">
+                <h3 id="character-name">Character's Name</h3>
+                <img id="character-image" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673-960x960.png" alt="Placeholder Image" title="Character Image" height="330px" width="320px">
+                <h4 id="character-race">Character's Race</h4>
+                <h4 id="character-class">Character's Class</h4>
+                <p class="display-stats" id="char-stat"><strong>CHA:</strong></p>
+                <p class="display-stats" id="con-stat"><strong>CON:</strong></p>
+                <p class="display-stats" id="dex-stat"><strong>DEX:</strong></p>
+                <p class="display-stats" id="int-stat"><strong>INT:</strong></p>
+                <p class="display-stats" id="str-stat"><strong>STR:</strong></p>
+                <p class="display-stats" id="wis-stat"><strong>WIS:</strong></p>
+            </div>
+        </div>
 </body>
 </html>
